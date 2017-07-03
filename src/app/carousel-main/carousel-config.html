@@ -1,7 +1,7 @@
 
 <div class = "container-fluid ">
     <div class = "row justify-content-center">
-        <div class = "col-md-8 mnwidth padd bcgr-white">
+        <div class = "col-md-8 mnwidth padd bcgr-white hidden-md-down">
             <ngb-carousel>
               <ng-template ngbSlide *ngFor = "let i of fotoCarouselMain">
                 <img src={{i.link}} class = "img-fluid">
@@ -12,9 +12,47 @@
              </ngb-carousel>
 
         </div>
+
+        <div class = "col-md-8 padd bcgr-white hidden-sm-down hidden-lg-up sizebleM">
+            <ngb-carousel>
+              <ng-template ngbSlide *ngFor = "let i of fotoCarouselMain" >
+                <img src={{i.link}} width = "700px" height = "390px">
+                <div class="carousel-caption">
+                  <h3>{{i.id}}</h3>
+                </div>
+              </ng-template>
+             </ngb-carousel>
+
+        </div>
+
+        <div class = "col-md-8 padd bcgr-white hidden-xs-down hidden-md-up sizebleS">
+            <ngb-carousel>
+              <ng-template ngbSlide *ngFor = "let i of fotoCarouselMain" >
+                <img src={{i.link}} width = "450px" height = "290px">
+                <div class="carousel-caption">
+                  <h3>{{i.id}}</h3>
+                </div>
+              </ng-template>
+             </ngb-carousel>
+
+        </div>
+
+        <div class = "col-md-8 padd bcgr-white hidden-sm-up sizebleXS">
+            <ngb-carousel>
+              <ng-template ngbSlide *ngFor = "let i of fotoCarouselMain" >
+                <img src={{i.link}} width = "300px" height = "190px">
+                <div class="carousel-caption">
+                  <h3>{{i.id}}</h3>
+                </div>
+              </ng-template>
+             </ngb-carousel>
+
+        </div>
+
+<br>
             <div class = "flex padd bcgr-white">
 
-                <div class = "col-md-2 d-block minwidth rightmarg">
+                <div class = "col-md-2 d-block minwidth rightmarg hidden-xs-down">
                     <iframe  width="280" height="145"  src="https://www.youtube.com/embed/kzo1x7e_ak4" frameborder="0" allowfullscreen ></iframe>
                     <iframe  width="280" height="145" src="https://www.youtube.com/embed/hOyXhjQ2-Lk" frameborder="0" allowfullscreen ></iframe>
                     <iframe  width="280" height="145" src="https://www.youtube.com/embed/YQgLwhkZL04" frameborder="0" allowfullscreen ></iframe>

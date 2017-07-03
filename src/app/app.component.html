@@ -17,12 +17,12 @@
       <span class="text-center fontEn">"COLA-BOK"</span></h1>
     </div>
     <nav>
-        <div class = "container-fluid">
+        <div class = "container-fluid hidden-md-down">
             <div class = "row justify-content-start">
                 <div class="col-md-1 col-sm-1 col-1 width onHow" *ngFor = "let item of navData" (click) = 'onSelect(item)' [class.selected] = 'item === selectedPicture'>
                   <a routerLink={{item.rlink}}>
                       <div class="card marg">
-                    <img class="card-img-bottom img-fluid hidden-xs-down" src={{item.link}} alt="Card image cap">
+                    <img class="card-img-bottom img-fluid" src={{item.link}} alt="Card image cap">
                     <div class="card-block bcgr-sky">
                       <h4 class="card-title text-center fontS">{{item.name}}</h4>
                     </div>
@@ -30,6 +30,18 @@
                 </div>
             </div>
         </div>
+
+        <div class = "container-fluid hidden-lg-up text-center">
+            <div class = "row justify-content-center">
+                <div class="col onHow" *ngFor = "let item of navData" (click) = 'onSelect(item)' [class.selected] = 'item === selectedPicture'>
+                  <a routerLink={{item.rlink}}>
+                      <button type="button" class="btn btn-secondary btn-lg">{{item.name}}</button>
+                  </a>
+                </div>
+            </div>
+        </div>
+<br>
+
     </nav>
 
     <router-outlet></router-outlet>

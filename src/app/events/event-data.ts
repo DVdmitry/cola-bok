@@ -2,11 +2,11 @@ import { Event } from './event';
 
 export const EVENTS2017: Event[] = [
     // new Event("Июль", "Одесса", '11.01-12.01', "https://s3.amazonaws.com/cola-bok/mainCarousel/1+(11).jpg", ""),
-    new Event("Август", "Гамбург", '09.08-13.08', "../../assets/foto-events/Hamburg.jpg", ""),
-    new Event("Сентябрь", "«Дожинки-2017» в Давид-Городке", '', "../../assets/foto-events/david.jpg", ""),
-    new Event("Октябрь", "«Закрытие велосезона» в Беловежской Пуще", '', "../../assets/foto-events/puscha.jpg", ""),
+    new Event("Август", "Гамбург", '09.08-13.08', "https://s3.amazonaws.com/cola-bok/new+events/Hamburg.jpg", ""),
+    new Event("Сентябрь", "«Дожинки-2017» в Давид-Городке", '', "https://s3.amazonaws.com/cola-bok/new+events/david.jpg", ""),
+    new Event("Октябрь", "«Закрытие велосезона» в Беловежской Пуще", '', "https://s3.amazonaws.com/cola-bok/new+events/puscha.jpg", ""),
     new Event("Ноябрь", "", '', "", ""),
-    new Event("Декабрь", "Рождественская встреча", '24.12-25.12', "../../assets/foto-events/cola.jpg", "")
+    new Event("Декабрь", "Рождественская встреча", '24.12-25.12', "https://s3.amazonaws.com/cola-bok/new+events/cola.jpg", "")
 ];
 
 export const EVENTS2018: Event[] = [
