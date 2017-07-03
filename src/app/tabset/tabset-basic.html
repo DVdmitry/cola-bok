@@ -1,0 +1,76 @@
+<ngb-tabset>
+  <ngb-tab>
+      <ng-template ngbTabTitle><b>Фото</b></ng-template>
+        <ng-template ngbTabContent>
+            <div class = "container-fluid">
+
+                <div class = "row justify-content-center hidden-md-down">
+                    <div class = "col-md-9 padd bcgr-white">
+                        <ngb-carousel>
+                          <ng-template ngbSlide *ngFor = "let foto of puschaFoto">
+                            <img src={{foto.link}} class = "img-fluid">
+                            <div class="carousel-caption">
+                              <h3>{{foto.id}}</h3>
+                            </div>
+                          </ng-template>
+                         </ngb-carousel>
+                    </div>
+                </div>
+
+                 <div class = "row justify-content-center hidden-sm-down hidden-lg-up">
+                    <div class = "col-md-12 padd bcgr-white sizebleM">
+                        <ngb-carousel>
+                          <ng-template ngbSlide *ngFor = "let foto of puschaFoto">
+                            <img src={{foto.link}} width = "700px" height = "400px">
+                            <div class="carousel-caption">
+                              <h3>{{foto.id}}</h3>
+                            </div>
+                          </ng-template>
+                         </ngb-carousel>
+                    </div>
+                </div>
+
+                <div class = "row justify-content-center hidden-xs-down hidden-md-up">
+                    <div class = "col-md-12 padd bcgr-white  sizebleS">
+                        <ngb-carousel>
+                          <ng-template ngbSlide *ngFor = "let foto of puschaFoto">
+                            <img src={{foto.link}} width = "450px" height = "300px">
+                            <div class="carousel-caption">
+                              <h3>{{foto.id}}</h3>
+                            </div>
+                          </ng-template>
+                         </ngb-carousel>
+                    </div>
+                </div>
+
+                <div class = "row justify-content-center hidden-sm-up">
+                    <div class = "col-md-12 padd bcgr-white  sizebleXS">
+                        <ngb-carousel>
+                          <ng-template ngbSlide *ngFor = "let foto of puschaFoto">
+                            <img src={{foto.link}} width = "300px" height = "200px">
+                            <div class="carousel-caption">
+                              <h3>{{foto.id}}</h3>
+                            </div>
+                          </ng-template>
+                         </ngb-carousel>
+                    </div>
+                </div>
+
+            </div>
+        </ng-template>
+  </ngb-tab>
+
+  <ngb-tab>
+    <ng-template ngbTabTitle><b>Видео</b></ng-template>
+    <ng-template ngbTabContent class = "sizebleM">
+        <iframe class = "iframes" src="https://www.youtube.com/embed/kzo1x7e_ak4" frameborder="0" allowfullscreen ></iframe>
+    </ng-template>
+  </ngb-tab>
+
+  <ngb-tab>
+    <ng-template ngbTabTitle><b>Комментарии</b></ng-template>
+    <ng-template ngbTabContent>
+      <p>Здесь мои комментарии.</p>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>

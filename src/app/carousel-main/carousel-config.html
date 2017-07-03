@@ -1,0 +1,30 @@
+
+<div class = "container-fluid ">
+    <div class = "row justify-content-center">
+        <div class = "col-md-8 mnwidth padd bcgr-white">
+            <ngb-carousel>
+              <ng-template ngbSlide *ngFor = "let i of fotoCarouselMain">
+                <img src={{i.link}} class = "img-fluid">
+                <div class="carousel-caption">
+                  <h3>{{i.id}}</h3>
+                </div>
+              </ng-template>
+             </ngb-carousel>
+
+        </div>
+            <div class = "flex padd bcgr-white">
+
+                <div class = "col-md-2 d-block minwidth rightmarg">
+                    <iframe  width="280" height="145"  src="https://www.youtube.com/embed/kzo1x7e_ak4" frameborder="0" allowfullscreen ></iframe>
+                    <iframe  width="280" height="145" src="https://www.youtube.com/embed/hOyXhjQ2-Lk" frameborder="0" allowfullscreen ></iframe>
+                    <iframe  width="280" height="145" src="https://www.youtube.com/embed/YQgLwhkZL04" frameborder="0" allowfullscreen ></iframe>
+                </div>
+
+                <div class = "col-md-2  d-block minwidth rightmarg">
+                    <iframe  width="280" height="145"  src="https://www.youtube.com/embed/hTZxOZ7dfsg" frameborder="0" allowfullscreen ></iframe>
+                    <iframe  width="280" height="145"  src="https://www.youtube.com/embed/iTmYWRPZTaI" frameborder="0" allowfullscreen ></iframe>
+                    <iframe  width="280" height="145" src="https://www.youtube.com/embed/1xLY9660xBU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+    </div>
+</div>

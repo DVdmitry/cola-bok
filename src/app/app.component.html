@@ -1,3 +1,37 @@
-<h1>
-  {{title}}
-</h1>
+<div class = "wrapper">
+    <div class="flexbox-ceiling">
+        <div class="heads">
+            <h5></h5>
+        </div>
+        <ul class="social">
+
+            <!-- <li><a class="vk" href="https://vk.com/vikakurs"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a class="ok" href="https://ok.ru/profile/574590333065"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li> -->
+            <li><a class="fb" href="https://www.facebook.com/velobrest.by/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a routerLink="/main" class="ent1"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div>
+    <img src = "../assets/logotip.png" width = "90px" height = "50px">
+     <h1 class = "text-center bigtext"> Cпортивно-туристический клуб
+      <span class="text-center fontEn">"COLA-BOK"</span></h1>
+    </div>
+    <nav>
+        <div class = "container-fluid">
+            <div class = "row justify-content-start">
+                <div class="col-md-1 col-sm-1 col-1 width onHow" *ngFor = "let item of navData" (click) = 'onSelect(item)' [class.selected] = 'item === selectedPicture'>
+                  <a routerLink={{item.rlink}}>
+                      <div class="card marg">
+                    <img class="card-img-bottom img-fluid hidden-xs-down" src={{item.link}} alt="Card image cap">
+                    <div class="card-block bcgr-sky">
+                      <h4 class="card-title text-center fontS">{{item.name}}</h4>
+                    </div>
+                  </div></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

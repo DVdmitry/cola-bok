@@ -1,0 +1,74 @@
+
+<div  *ngIf = "events2017"   class = "container-fluid">
+    <div class = "row justify-content-center">
+        <div class="col-md-7">
+    <div id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="card">
+        <div class="card-header" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              2017
+            </a>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-block">
+
+                      <ngb-accordion #acc="ngbAccordion">
+                            <ngb-panel *ngFor = "let event of events2017" title="{{event.month}}">
+                              <ng-template ngbPanelContent>
+                                  <b>Планируемые даты проведения:</b> <i>{{event.dates}}</i>
+                                  <br>
+                                  <b>Место проведения:</b> <i>{{event.discription}}</i>
+                                  <br>
+                                  <b>Дополнительная информация:</b> <i>{{event.info}}</i>
+                                  <br>
+                                  <img width="560" height="315" src="{{event.link}}">
+                                  <!-- <iframe width="560" height="315" [src]="sanitizer.bypassSecurityTrustResourceUrl('myURL')" frameborder="0" allowfullscreen></iframe>  -->
+                              </ng-template>
+                            </ngb-panel>
+                      </ngb-accordion>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-header" role="tab" id="headingThree">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              2018
+            </a>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="card-block">
+
+              <!-- <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-6"> -->
+                      <ngb-accordion #acc="ngbAccordion">
+                            <ngb-panel *ngFor = "let event of events2018" title="{{event.month}}">
+                              <ng-template ngbPanelContent>
+                                  <b>Планируемые даты проведения:</b> <i>{{event.dates}}</i>
+                                  <br>
+                                  <b>Место проведения:</b> <i>{{event.discription}}</i>
+                                  <br>
+                                  <b>Дополнительная информация:</b> <i>{{event.info}}</i>
+                                  <br>
+                                  <img width="560" height="315" src="{{event.link}}">
+                                  <!-- <iframe width="560" height="315" [src]="sanitizer.bypassSecurityTrustResourceUrl('myURL')" frameborder="0" allowfullscreen></iframe>  -->
+                              </ng-template>
+                            </ngb-panel>
+                      </ngb-accordion>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+</div>
+<br>
+<br>
+<br>

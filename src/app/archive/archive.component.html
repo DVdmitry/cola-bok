@@ -1,0 +1,19 @@
+<div *ngIf = "eventsArchive" class="jumbotron-fluid">
+    <div  class = "container-fluid">
+        <div class = "row justify-content-center">
+            <div class="col-md-10 col-sm-12">
+                <ngb-accordion #acc="ngbAccordion">
+                      <ngb-panel title="Несвиж">
+                        <ng-template ngbPanelContent>
+                            <b>Событие состоялось:</b> <i>"30.03.2014-14.03.2016"</i>
+                            <br>
+                            <ngbd-tabset-basic></ngbd-tabset-basic>
+                        </ng-template>
+                      </ngb-panel>
+                </ngb-accordion>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<!-- <ngbd-dropdown-basic></ngbd-dropdown-basic> -->

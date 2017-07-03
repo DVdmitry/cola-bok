@@ -1,1 +1,246 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.wrapper  {
+    background-image: url("./assets/bcgr.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 40%;
+}
+
+.fontEn{
+    font-size: 35px;
+    font-family: 'Satisfy', cursive;
+    text-align: right;
+}
+
+.indent {
+    margin: 2%;
+}
+
+.bigtext {
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.marg {
+    margin: 1%;
+
+}
+
+.width {
+    min-width: 250px;
+}
+
+.padd{
+    padding: 1%;
+}
+
+.mnwidth {
+    min-width:800px;
+    max-width:800px;
+}
+
+.marg-out{
+    margin: 0% 1% 1% 1%;
+
+}
+
+.minwidth {
+    min-width:280px;
+    max-width:280px;
+}
+
+.rightmarg {
+    margin:0 1% 0 0;
+    padding:0;
+
+}
+
+.flex{
+    display: flex;
+}
+
+
+.brand {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.brand li {
+    margin: 10px;
+}
+
+.down p, .down li{
+    margin: 1px;
+    padding: 1px;
+}
+
+.foot-wrap{
+    background-color:#E1E1E1;
+}
+
+.onHow:hover{
+    transform: scale(1.03);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.white{
+    color: white;
+}
+
+.bcgr-white{
+    background-color:white;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+}
+
+.bcgr-sky{
+    background-color: #E8F7EC;
+}
+
+.selected {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+
+}
+.sizebleM{
+    width: 580px;
+    height: 410px;
+}
+.sizebleS{
+    width: 450px;
+    height: 300px;
+}
+
+.sizebleXS
+{
+    width: 300px;
+    height: 200px;
+}
+
+.iframes{
+    display:block;
+    width:100%;
+    height:400px;
+}
+.fontS{
+    font-size: 18px;
+}
+/*for social ul*/
+.flexbox-ceiling {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#6383A8, #F1F1F1);
+}
+
+.heads{
+    padding: 0px;
+    margin: 0px;
+    flex: 0 0 150px;
+}
+.heads h2{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow:
+                black -2px -2px 1px,
+                white -1px -1px 1px,
+                black 1px 1px 1px,
+                white 2px 2px 1px,
+                black 3px 3px 1px;
+}
+
+.heads a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+
+a.single {
+    transform: scale(1.5);
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding-top: 15%;
+}
+
+ul.social{
+    list-style: none;
+    padding: 0px;
+    margin:0px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 30%;
+    padding-top: 13px;
+    min-width: 200px;
+}
+
+.social li {
+    width: 35px;
+    text-align: center;
+    padding-right: 6px;
+
+}
+
+
+header .vk, header .ok, header .fb{
+    padding: 10% 15%;
+}
+
+
+.vk {
+    background-color: #6383A8;
+}
+
+.ok {
+    background-color: #FF9000;
+}
+
+.fb {
+    background-color: #3A5795;
+}
+
+
+ul.social li a{
+    display: block;
+}
+
+
+.inside ul.social li a{
+    transform: scale(1.1);
+}
+
+.inside p{
+    margin: 0;
+    padding: 0;
+}
+
+.sources a, .social a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+ a.ent1{
+    display: block;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    transform: scale(1.7);
+    padding-top: 2%;
+}
+
+
+a.ent1:hover {
+opacity: 1;
+}
